@@ -1,0 +1,74 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: 	#006400;
+  color: white;
+  align-items: center;
+  
+}
+nav>ul{
+  list-style: none;
+}
+
+nav>ul>li{
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+}
+
+nav>ul>li>a{
+   text-decoration: none;
+   font-size: larger;
+   font-weight: bold;
+   color: white;
+}
+
+#home {
+  background-image: url(./images/taylor-simpson-_aOMsnxAL9A-unsplash\ \(1\).jpg);
+  text-align: left;
+  font-weight: bold;
+  font-size: large;
+  height: 700px;
+  background-size:cover ;
+}
+
+#destination{
+    background-color: #6B8E23;
+    display: flex;
+    margin-top: 10px;
+}
+
+#destination>div {
+    margin: 20px;
+    padding: 5px;
+    text-align: justify;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    align-items: center;
+}
+
+  h3 {
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-family:Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+#contacts {
+  margin-top: 10px;
+  background-color:	#006400;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
