@@ -8,12 +8,17 @@
 
 header{
   display: flex;
+  min-height: 70px;
+  max-height: 85px;
   justify-content: space-between;
   background-color: 	#006400;
   color: white;
   align-items: center;
+  position: fixed;
+  width: 98vw;
   
 }
+
 nav>ul{
   list-style: none;
 }
@@ -36,7 +41,10 @@ nav>ul>li>a{
   text-align: left;
   font-weight: bold;
   font-size: large;
-  height: 700px;
+  height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
   background-size:cover ;
 }
 
@@ -64,7 +72,9 @@ nav>ul>li>a{
     font-family:Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
 }
-
+#menuIcon{
+  display:none;       
+ }
 #contacts {
   margin-top: 10px;
   background-color:	#006400;
@@ -72,3 +82,62 @@ nav>ul>li>a{
   justify-content: space-around;
   color: white;
 }
+
+@media only screen 
+  and (min-device-width: 70px) 
+  and (max-device-width: 360px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+      #contacts {
+        display: flex;
+        flex-direction:column;
+        margin: 5px;
+        padding:1em;
+        align-items: center;
+      }
+      #destination {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      #destination>div{
+        margin: 10px;
+        
+      }
+
+      h3{
+        font-size: 20px;
+      }
+      #topHeader{
+        font-size: 5vw;
+        text-align: center;
+        margin:auto;
+        white-space: nowrap
+      }
+      #menuIcon{
+        display:inline-block;       
+       }
+         #navLinks{
+              display:none;  
+            }
+        
+}
+@media only screen 
+  and (min-device-width: 361px) 
+  and (max-device-width: 720px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    li{
+      font-size: 0.5rem;
+      text-align:right ;
+      display: inline-block;
+      flex-wrap:nowrap ;
+    }
+    #topHeader{
+      font-size: 4vw;
+      text-align: center;
+      margin:auto;
+      white-space: nowrap
+    }
+  }
+
